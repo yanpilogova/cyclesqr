@@ -12,8 +12,7 @@ class SQRServiceTest {
             "'minimum amount of sqr', 0, 10, 0"})
     void calculateSqrValues(String name, int number1, int number2, int expected) {
         SQRService sqrService = new SQRService();
-        int actual;
-        actual = SQRService.calculateSqr(number1, number2);
+        int actual = sqrService.calculateSqr(number1, number2);
         assertEquals(actual, expected);
     }
 }
